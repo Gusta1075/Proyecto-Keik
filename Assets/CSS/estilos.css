@@ -1,0 +1,327 @@
+/*General*/
+*{
+    margin: 0;
+}
+
+.texto-negro{
+  color: black;
+}
+
+.texto-blanco{
+  color: white;
+}
+
+.contenedor{
+    max-width: 1920px;
+    margin: auto;
+}
+/*Encabezado*/
+
+
+
+
+.logo{
+    height: 100px;
+    width: 150px;
+
+
+}
+
+.navegacion{
+    display: flex;
+    margin-top: 25px;
+    font-size: 1.5rem;
+    list-style: none;
+    font-family: 'Secular One', sans-serif;
+    width: 180px;
+    padding-left: 10px;
+    
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    padding-top: 30px;
+    transition: all 0.2 ease;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    width: 170px;
+    box-shadow: 0px 10px 10px 0px rgba(159, 80, 2, 0.4);
+    background-color: white;
+    z-index: 3;
+
+    transition: all 0.2s ease;
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.2s ease;
+  }
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+.dropdown-content a:hover {
+    color: #ffffff;
+    background-color: #ff6d00;
+    transition: all 0.2s ease;
+  }
+
+.boton{
+    background-color:#f8f9fa ;
+    border: 0px;
+    font-family: 'Secular One', sans-serif;
+    width: 100px;
+    font-weight: bold;
+  }
+
+  /* Main */
+
+  .carousel-control-prev-icon{
+    color: black;
+    background-color: #000000;
+    opacity: 0.5;
+  }
+
+  .carousel-control-next-icon{
+    color: black;
+    background-color: #000000;
+    opacity: 0.5;
+  }
+
+
+
+  .acomodar{
+    margin:  auto;
+    margin-right: 800px;
+    height: 800px;
+    width: 1920px;
+    
+  }
+
+  main div button{
+    margin-right: 20px;
+  }
+
+  svg{
+    color: black;
+    height: 20px;
+    width: 20px;
+
+  }
+
+  /* Galería de proyectos */
+
+  .proyectos-recientes {
+    margin-top: 10px;
+    padding: 40px;
+    font-family: 'Secular One', sans-serif;
+    
+  }
+  
+  .seccion-titulo{
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 45px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.2s ease;
+
+  }
+  
+  .proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 10px;
+  }
+  
+  .overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .proyecto {
+    position: relative;
+  }
+  
+  .proyecto:hover img {
+    opacity: 0.2;
+  }
+  
+  .proyecto:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay .iconos-contenedor {
+    display: flex;
+  }
+  
+  .overlay button {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 10px 10px 0px rgba(91, 90, 90, 0.4);
+    border: 0px;
+    font-family: 'Secular One', sans-serif;
+    width: 100px;
+    font-weight: bold;
+    
+
+  }
+
+.poverlay{
+    margin-left: 60px;
+    color: black;
+}
+
+.boton-destacado:hover {
+  color:#ffffff
+}
+
+.contenido-movil{
+  display: none;
+}
+
+.contenido-ordenador{
+  display: block;
+}
+
+.navbar-toggler{
+  position: absolute, right, top;
+}
+
+
+@media screen and (max-width: 768px) {
+  .contenido-movil{
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 0.2 ease;
+    background-color: white;
+    text-decoration: none;
+    margin-left: 4.5px;;
+    text-align: center;
+  }
+  
+  .contenido-ordenador{
+    display: none;
+  }
+  
+}
+
+.carousel-control-next{
+  border-radius: 10px;
+}
+
+.seccion-titulo{
+  padding-top: 115px;
+}
+
+/*Footer*/ 
+
+footer section {
+  background-color: #f8f9fa;
+  display: grid;;
+  font-family: 'Secular One', sans-serif;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 50px)
+}
+
+.contacto{
+  
+  margin: 15px;
+  margin-left: 50px;
+  padding-top: 50px;
+}
+
+.redes{
+  display: grid;
+  grid-column-start:8;
+  grid-column-end:9;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  margin: auto;
+  text-align: center;
+  
+}
+a:link, a:visited, a:active {
+  text-decoration:none;
+  color: #000000;
+  font-family: 'Secular One', sans-serif;
+}
+ footer div a:hover{
+  color: #ff6d00;
+  text-decoration: underline;
+ }
+
+ .oculto {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+ .oculto:hover{
+  opacity: 1;
+  transition: all 0.2s ease;
+ }
+
+@media screen and (max-width: 768px){
+  footer section {
+    background-color: #f8f9fa;
+    display: grid;;
+    font-family: 'Secular One', sans-serif;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 50px)
+  }
+  
+  .contacto{
+    font-size: 0.3rem;
+    margin: 15px;
+    margin-left: 30px;
+    padding-top: 50px;
+  }
+  
+  .redes{
+    grid-column-start:8;
+    grid-column-end:9;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin: auto;
+    text-align: center;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+
+  a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #000000;
+    font-family: 'Secular One', sans-serif;
+}
+  
+
+}
+
