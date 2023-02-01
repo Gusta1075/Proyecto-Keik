@@ -11,4 +11,39 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/index.html">
 </head>
+<body>
+  <section class="formulario" id="formulario">
+    <form class="form" action="https://formspree.io/f/myyvbqnv" method="POST">
+      <h2 class="form__title">Formulario de Contacto</h2>
+      <p class="form__paragraph">Completa los datos y dejame un mensaje</p>
+      <div class="form__container">
+        <div class="form__group">
+          <input type="text" id="name" class="form__input" name="name" placeholder=" ">
+          <label for="name" class="form__label">Nombre:</label>
+          <span class="form__line"></span>
+        </div>
+        <div class="form__group">
+          <input type="text" id="user" class="form__input" name="name" placeholder=" ">
+          <label for="use" class="form__label">Apellido</label>
+          <span class="form__line"></span>
+        </div>
+        <div class="form__group">
+          <input type="email" id="email" class="form__input" name="name" placeholder=" ">
+          <label for="email" class="form__label">Email:</label>
+          <span class="form__line"></span>
+        </div>
+        <div class="form__group">
+          <textarea name="mensaje" placeholder="Mensaje" id="" cols="30" rows="2"></textarea>
+          <span class="form__line"></span>
+        </div>
+        <input type="submit" class="form__submit" value="Enviar">
+        <input type="reset" class="form__submit" value="Reset">
+      </div>
+    </form>
+  </section>
+  
+  <script src="/index.js"></script>
+</body>
+</html>
