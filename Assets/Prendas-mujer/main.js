@@ -13,13 +13,12 @@ productos.forEach(item => {
 let div = document.createElement("div");
 div.innerHTML = `
 <h1>Id: ${item.id}</h1>
-<h2>Seccion: ${item.seccion}</h2>
 <p>Nombre:${item.nombre}<p>
-<b>Precio: ${item.precio}</b>`;
+<b>Precio: ${item.precio}</b>
+<h2>Seccion: ${item.seccion}</h2>`;
 
 container.append(div);
 
 })
-
 
 
