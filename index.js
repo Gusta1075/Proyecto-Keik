@@ -94,3 +94,8 @@ case "4":
     break;
 }
 
+// pasando productos de html a JavaSript en html accesorios de mujer 
+
+
+
+
