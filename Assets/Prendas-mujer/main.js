@@ -1,3 +1,5 @@
+
+
 let container = document.getElementById("container");
 
 const productos= [
@@ -18,7 +20,10 @@ div.innerHTML = `
 <h2>Seccion: ${item.seccion}</h2>`;
 
 container.append(div);
-
 })
+
+
+
+
 
 

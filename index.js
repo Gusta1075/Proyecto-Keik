@@ -15,12 +15,13 @@ if (edad < 0 || edad == 0){
 	alert("¿Seguro que tienes esa edad?");
 }
 
-// practicas de for 
+ //practicas de for 
 for (let precio = 50 ; precio <55 ; precio++){
     document.write("El precio es:" + precio);
     console.log("El precio de tu remera es: " + precio);
 }
-// practicando switch 
+ //practicando switch 
+
 let estacion = prompt("coloca la estacion del año");
 
 switch (estacion){
@@ -94,8 +95,95 @@ case "4":
     break;
 }
 
-// pasando productos de html a JavaSript en html accesorios de mujer 
+
+let productos = [ 
+	{ id: 1, nombre: "camisa blanca", precio: 1250, seccion: "verano" },
+	{ id: 2, nombre: "camisa verde", precio: 1150, seccion: "invierno" },
+	{ id: 3, nombre: "camisa amarilla", precio: 1350, seccion: "primavera"},
+	{ id: 4, nombre: "camisa gris", precio: 1450, seccion: "otoño" },
+	{ id: 5, nombre: "camisa azul", precio: 750, seccion: "indefinido"},
+	];
+	
+	//For each (recorro el arreglo.)
+	productos.forEach(producto => console.log(producto.nombre + " " + producto.seccion + " " + producto.precio));
+		
+		//ciclo for
+	for(let index = 0; index <productos.length; index++) {
+		 console.log(productos[index]);
+	}
+
+		//find  encontrar element 
+	let nombre = prompt("ingrese el nombre del producto");
+	let buscar = productos.find(producto => producto.nombre === nombre);
+		console.log(buscar);
+
+	let mensaje = `
+	id: ${buscar.id}
+	nombre: ${buscar.nombre}
+	seccion: ${buscar.seccion}
+	precio: ${buscar.precio}`;
+
+	alert(mensaje);
 
 
+	//filter
+	let filtrados = productos.filter(item => item.precio > 1000);
+		//console.log(filtrados);
+
+	//some verifico si existe algun elemente con una condicion.
+	
+	console.log(productos.some(item => item.precio === 1250));
+	console.log(productos.some(item => item.nombre  === "pantalon"));
+	console.log(productos.some(item => item.producto  === "camisa azul"));
+
+		
+	// map transformo los datos y los agrupo por nombre y seccion.
+
+	let nombres = productos.map(item => item.nombre);
+	console.log(nombres);
+	let precio = productos.map(item => item.precio);
+	console.log(precio);
+
+	let precioPromocional = productos.map(item => {
+		return {
+			id: item.id,
+			nombre: item.nombre, 
+			seccion: item.seccion, 
+			precio: item.precio - item.precio * 0.30}
+		});
+			console.log(precioPromocional);
+
+		// reduce sumo el total de todos los productos del array
+
+		let totalPrecios = productos.reduce((acum, item) => acum + item.precio, 0);
+		console.log(totalPrecios);
+	
+	//.push (agrego linea 6 al array) unshift (agrego linea 0 al array).
+	let index = productos.length;
+	productos.push({id: 6, nombre:"Camisa floreada", precio: 350, seccion: "Alegria"});
+	productos.unshift({id: 0, titulo:"CAMISAS", seccion: "estaciones del año"});
+	console.log(productos);
+
+		//saco productos de atras y de adelante del array
+	 productos.pop();
+	 productos.shift();
+	 console.log(productos);
+
+		// saco productos del posicones diferentes.
+	 productos.splice(2, 1);
+	 console.log(productos);
+
+	 
+	 console.log(productos.indexOf("Camisa verde"));
+
+	 console.log(productos.includes("Camisa verde"));
+	 console.log(productos.includes("pantalones"));
+
+	//ejercicio para buscar un producto en Stock.
+	productos = prompt("ingrese el producto a buscar");
+	alert(productos.includes("Camisa verde"));
+	alert(productos.includes("pantalones"));
+
+	
 
 
