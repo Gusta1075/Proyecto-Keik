@@ -1,5 +1,5 @@
 //practicas de alert
-let nombre = prompt("ingrese su nombre");
+/*let nombre = prompt("ingrese su nombre");
 alert("Bienvenido a mi pagina " + nombre);
 
 
@@ -94,7 +94,8 @@ case "4":
     alert("La operacion que ha realizado no es correcta");
     break;
 }
-
+*/
+  //Segunda Preentrega
 
 let productos = [ 
 	{ id: 1, nombre: "camisa blanca", precio: 1250, seccion: "verano" },
@@ -105,7 +106,8 @@ let productos = [
 	];
 	
 	//For each (recorro el arreglo.)
-	productos.forEach(producto => console.log(producto.nombre + " " + producto.seccion + " " + producto.precio));
+	productos.forEach(producto => console.log(producto.nombre + " " + producto.seccion + 
+	" " + producto.precio));
 		
 		//ciclo for (falto de la primera entrega.)
 	for(let index = 0; index <productos.length; index++) {
@@ -113,7 +115,7 @@ let productos = [
 	}
 
 		//find  encontrar element 
-	let nombre = prompt("ingrese el nombre del producto");
+	nombre = prompt("ingrese el nombre del producto");
 	let buscar = productos.find(producto => producto.nombre === nombre);
 		console.log(buscar);
 
@@ -128,7 +130,7 @@ let productos = [
 
 	//filter
 	let filtrados = productos.filter(item => item.precio > 1000);
-		//console.log(filtrados);
+		console.log(filtrados);
 
 	//some verifico si existe algun elemente con una condicion.
 	
@@ -185,5 +187,4 @@ let productos = [
 	alert(productos.includes("pantalones"));
 
 	
-
 
