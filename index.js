@@ -103,7 +103,7 @@ let productos = [
 	{ id: 4, nombre: "camisa gris", precio: 1450, seccion: "otoño" },
 	{ id: 5, nombre: "camisa azul", precio: 750, seccion: "indefinido"},
 	];
-	
+/*	
 	//For each (recorro el arreglo.)
 	productos.forEach(producto => console.log(producto.nombre + " " + producto.seccion + " " + producto.precio));
 		
