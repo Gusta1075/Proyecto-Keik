@@ -1,0 +1,46 @@
+.laboral-recientes {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: block;
+    transition: all 0.2s ease;
+    background-color: rgb(180, 214, 219);
+}
+.laboral-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px
+}
+.card img {
+    width: 4rem;
+}
+.card img:hover  {
+    transform: scale(1);
+    width: 100px;
+    transition: all 0.2s;
+}
+.card-img-top {
+    border-radius: 10%;
+
+}
+.card {
+    position: relative;
+    padding: 2rem;
+    border-radius: 2%;
+    background: linear-gradient(rgb(139, 137, 159), rgb(105, 175, 115));
+    height: 100%;
+}
+
+.card-title {
+    font-family: 'Rubik Dirt', cursive;
+}
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    
+}
+th, td {
+    padding: 10px;
+}
