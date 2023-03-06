@@ -21,18 +21,18 @@
       "precio": 50,
       "id": 4,
       "title": "Camisas",
-      "thumbnailUrl": "/Assets/Logos/Camisas de hombre.png"
+      "thumbnailUrl": "/Assets/Logos/Camisashombre.png"
     },
     {
       "precio": 10,
       "id": 5,
       "title": "Zapatillas",
-      "thumbnailUrl": "/Assets/Logos/fotos de zapatillas.png"
+      "thumbnailUrl": "/Assets/Logos/zapatillas.png"
     },
     {
       "precio": 150,
       "id": 6,
       "title": "Medias",
-      "thumbnailUrl": "/Assets/Logos/fotos de medias.png"
+      "thumbnailUrl": "/Assets/Logos/medias.png"
     }
   ]
