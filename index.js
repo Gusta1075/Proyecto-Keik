@@ -182,10 +182,28 @@ let productos = [
 	 console.log(productos.includes("pantalones"));
 
 	//ejercicio para buscar un producto en Stock.
-	productos = prompt("ingrese el producto a buscar");
+	producto
+s = prompt("ingrese el producto a buscar");
 	alert(productos.includes("Camisa verde"));
 	alert(productos.includes("pantalones"));
+
+button.addEventListener("click", () => {
+	Toastify({
+	text: "Click aquí para ir a mi porfolio!",
+	duration: 3000,
+	destination: "https://gusta1075.github.io/Porfolio-Gustavo-Sanmartino/",
+	  }).showToast();
+	});
 */
+    Swal.fire({
+	title: 'Gracias!!',
+	text: 'Te encuentras visitando mi pagina',
+	imageUrl: '/Assets/Logos/Foto perfil opcional.jpg',
+	imageWidth: 250,
+	imageHeight: 400,
+	imageAlt: 'Custom image',
+  })  
+
 	const cards = document.getElementById('cards')
 	const items = document.getElementById('items')
 	const footer = document.getElementById('footer')
@@ -195,7 +213,7 @@ let productos = [
 	const fragment = document.createDocumentFragment()
 	let carrito = {}
 
-  
+
 	document.addEventListener("DOMContentLoaded", () => {
 		fetchData()
     if (localStorage.getItem("carrito")) {
@@ -233,6 +251,8 @@ const pintarCards = data => {
 	})
 	cards.appendChild(fragment)
 }
+
+
 
 const addCarrito = e => {
 	//console.log(e.target)
@@ -274,6 +294,8 @@ const pintarCarrito = () => {
 	items.appendChild(fragment)
 
 	pintarFooter()
+
+	
 
   localStorage.setItem('carrito', JSON.stringify(carrito))
 
