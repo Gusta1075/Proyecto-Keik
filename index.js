@@ -183,10 +183,11 @@ let productos = [
 
 	//ejercicio para buscar un producto en Stock.
 	producto
-s = prompt("ingrese el producto a buscar");
+     s = prompt("ingrese el producto a buscar");
 	alert(productos.includes("Camisa verde"));
 	alert(productos.includes("pantalones"));
 
+	//boton para acceder a mi porfolio
 button.addEventListener("click", () => {
 	Toastify({
 	text: "Click aquí para ir a mi porfolio!",
@@ -195,14 +196,15 @@ button.addEventListener("click", () => {
 	  }).showToast();
 	});
 */
-    Swal.fire({
-	title: 'Gracias!!',
-	text: 'Te encuentras visitando mi pagina',
-	imageUrl: '/Assets/Logos/Foto perfil opcional.jpg',
-	imageWidth: 250,
-	imageHeight: 400,
-	imageAlt: 'Custom image',
-  })  
+//alerta de bienvenida a la mi pagina
+    //wal.fire({
+	//title: 'Gracias!!',
+	//text: 'Te encuentras visitando mi pagina',
+	//imageUrl: '/Assets/Logos/Foto perfil opcional.jpg',
+	//imageWidth: 250,
+	//imageHeight: 400,
+	//imageAlt: 'Custom image',
+ // })  
 
 	const cards = document.getElementById('cards')
 	const items = document.getElementById('items')
@@ -251,8 +253,6 @@ const pintarCards = data => {
 	})
 	cards.appendChild(fragment)
 }
-
-
 
 const addCarrito = e => {
 	//console.log(e.target)
