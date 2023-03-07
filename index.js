@@ -263,6 +263,7 @@ const addCarrito = e => {
 	}
 	e.stopPropagation();
 }
+
 const setCarrito = objeto => {
 	//console.log(objeto);
 	const producto = {

@@ -11,7 +11,7 @@
     margin-bottom: 40px
 }
 .card img {
-    width: 5rem;
+    width: 4rem;
 }
 .card img:hover  {
     transform: scale(1);
