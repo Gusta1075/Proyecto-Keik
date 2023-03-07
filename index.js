@@ -339,6 +339,7 @@ const pintarCarrito = () => {
       carrito[e.target.dataset.id] = {...producto}
       pintarCarrito()
     }
+	//Disminuir
     if(e.target.classList.contains('btn-danger')) {
         const producto = carrito[e.target.dataset.id]
         producto.cantidad--
