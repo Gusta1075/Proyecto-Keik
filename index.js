@@ -240,7 +240,7 @@ button.addEventListener("click", () => {
 		} catch (err) {
 			console.log(err)
 	}
-};
+}
 
 const pintarCards = data => {
 	data.forEach(producto => {
