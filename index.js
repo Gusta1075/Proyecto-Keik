@@ -187,6 +187,9 @@ let productos = [
 	alert(productos.includes("Camisa verde"));
 	alert(productos.includes("pantalones"));
 
+	
+	LIBRERIAS 
+
 	//boton para acceder a mi porfolio
 button.addEventListener("click", () => {
 	Toastify({
@@ -205,6 +208,9 @@ button.addEventListener("click", () => {
 	//imageHeight: 400,
 	//imageAlt: 'Custom image',
  // })  
+
+
+ 
 
 	const cards = document.getElementById('cards')
 	const items = document.getElementById('items')
@@ -235,7 +241,7 @@ button.addEventListener("click", () => {
 		try {
 			const res = await fetch("api.json")
 			const data = await res.json()
-			//console.log(data)
+			console.log(data)
 			pintarCards(data)
 		} catch (err) {
 			console.log(err)

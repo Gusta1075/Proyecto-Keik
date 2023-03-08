@@ -1,3 +1,8 @@
+body {
+    background-color: aqua;
+}
+
+
 .laboral-recientes {
     height: 100%;
     width: 100%;
@@ -26,7 +31,7 @@
     position: relative;
     padding: 2rem;
     border-radius: 2%;
-    background: linear-gradient(rgb(139, 137, 159), rgb(105, 175, 115));
+    
     height: 100%;
 }
 
