@@ -1,38 +1,38 @@
 [
     {
-      "precio": 500,
+      "precio": 5800,
       "id": 1,
       "title": "Remera",
-      "thumbnailUrl": "/Assets/Logos/Camiseta3.png"
+      "thumbnailUrl": "./Assets/Logos/Camiseta3.png"
     },
     {
-      "precio": 300,
+      "precio": 12500,
       "id": 2,
       "title": "Pantalon",
-      "thumbnailUrl": "/Assets/Logos/Pantalones1m-PhotoRoom.png-PhotoRoom.png"
+      "thumbnailUrl": "./Assets/Logos/Pantalones1m-PhotoRoom.png-PhotoRoom.png"
     },
     {
-      "precio": 100,
+      "precio": 9800,
       "id": 3,
       "title": "Sudadera",
-      "thumbnailUrl": "/Assets/Prendas-hombre/FotosPrendas/sudadera2h.png"
+      "thumbnailUrl": "./Assets/Prendas-hombre/FotosPrendas/sudadera2h.png"
     },
     {
-      "precio": 50,
+      "precio": 15600,
       "id": 4,
       "title": "Camisas",
-      "thumbnailUrl": "/Assets/Logos/Camisashombre.png"
+      "thumbnailUrl": "./Assets/Logos/Camisashombre.png"
     },
     {
-      "precio": 10,
+      "precio": 35000,
       "id": 5,
       "title": "Zapatillas",
-      "thumbnailUrl": "/Assets/Logos/zapatillas.png"
+      "thumbnailUrl": "./Assets/Logos/zapatillas.png"
     },
     {
-      "precio": 150,
+      "precio": 2500,
       "id": 6,
       "title": "Medias",
-      "thumbnailUrl": "/Assets/Logos/medias.png"
+      "thumbnailUrl": "./Assets/Logos/medias.png"
     }
   ]
