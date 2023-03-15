@@ -200,15 +200,15 @@ button.addEventListener("click", () => {
 	});
 */
 //alerta de bienvenida a la mi pagina
-    //wal.fire({
-	//title: 'Gracias!!',
-	//text: 'Te encuentras visitando mi pagina',
-	//imageUrl: '/Assets/Logos/Foto perfil opcional.jpg',
-	//imageWidth: 250,
-	//imageHeight: 400,
-	//imageAlt: 'Custom image',
- // })  
-
+   /* wal.fire({
+	title: 'Gracias!!',
+	text: 'Te encuentras visitando mi pagina',
+	imageUrl: '/Assets/Logos/Foto perfil opcional.jpg',
+	imageWidth: 250,
+	imageHeight: 400,
+	imageAlt: 'Custom image',
+ })  
+*/
 
  
 
