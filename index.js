@@ -236,7 +236,7 @@ button.addEventListener("click", () => {
   items.addEventListener('click', e => {
     btnAccion(e)
   })
-	
+	//trae productos del api local
 	const fetchData = async () => {
 		try {
 			const res = await fetch("./api.json")
@@ -247,7 +247,7 @@ button.addEventListener("click", () => {
 			console.log(err)
 	}
 }
-
+ // pintar productos
 const pintarCards = data => {
 	data.forEach(producto => {
 		templateCard.querySelector('h5').textContent = producto.title
@@ -259,7 +259,7 @@ const pintarCards = data => {
 	})
 	cards.appendChild(fragment)
 }
-
+//agregar al carrito
 const addCarrito = e => {
 	//console.log(e.target)
 	//console.log(e.target.classList.contains('btn-dark'))
