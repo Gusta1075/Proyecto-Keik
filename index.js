@@ -222,6 +222,8 @@ button.addEventListener("click", () => {
 	let carrito = {}
 
 
+	
+
 	document.addEventListener("DOMContentLoaded", () => {
 		fetchData()
     if (localStorage.getItem("carrito")) {
@@ -269,6 +271,8 @@ const addCarrito = e => {
 	}
 	e.stopPropagation();
 }
+
+
 
 const setCarrito = objeto => {
 	//console.log(objeto);
@@ -357,3 +361,5 @@ const pintarCarrito = () => {
             }
     e.stopPropagation()
   }
+
+  
