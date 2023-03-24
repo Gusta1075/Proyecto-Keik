@@ -264,8 +264,7 @@ const pintarCards = data => {
 }
 //agregar al carrito
 const addCarrito = e => {
-	//console.log(e.target)
-	//console.log(e.target.classList.contains('btn-dark'))
+	
 	if(e.target.classList.contains('btn-dark')) {
 		setCarrito(e.target.parentElement)
 		
@@ -276,7 +275,7 @@ const addCarrito = e => {
 
 
 const setCarrito = objeto => {
-	//console.log(objeto);
+	
 	const producto = {
 		id: objeto.querySelector('.btn-dark').dataset.id,
 		title: objeto.querySelector('h5').textContent,
@@ -291,7 +290,7 @@ const setCarrito = objeto => {
 	pintarCarrito()
 }
 const pintarCarrito = () => {
-	//console.log(carrito)
+	
 	items.innerHTML = ''
 	Object.values(carrito).forEach(producto => {
 		templateCarrito.querySelector('th').textContent = producto.id
@@ -341,7 +340,7 @@ const pintarCarrito = () => {
 	}
 
   const btnAccion = e => {
-    //console.log(e.target)
+    
     //Aumentar
     if(e.target.classList.contains('btn-info')) {
       console.log(carrito[e.target.dataset.id])
