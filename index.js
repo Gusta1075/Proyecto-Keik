@@ -193,7 +193,7 @@ let productos = [
 	
 */
 //alerta de bienvenida a la mi pagina
-   /* wal.fire({
+   /* Swal.fire({
 	title: 'Gracias!!',
 	text: 'Te encuentras visitando mi pagina',
 	imageUrl: '/Assets/Logos/Foto perfil opcional.jpg',
@@ -201,18 +201,41 @@ let productos = [
 	imageHeight: 400,
 	imageAlt: 'Custom image',
  })  
-*/
-//boton para acceder a mi porfolio
-//button.addEventListener("click", () => {
-//	Toastify({
-//	text: "Click aquí para ir a mi porfolio!",
-//	duration: 3000,
-//	destination: "https://gusta1075.github.io/Porfolio-Gustavo-Sanmartino/",
-//	  }).showToast();
-//	});
-	
- 
 
+	/*boton para acceder a mi porfolio
+	button.addEventListener("click", () => {
+	Toastify({
+	text: "Click aquí para ir a mi porfolio!",
+	duration: 3000,
+	destination: "https://gusta1075.github.io/Porfolio-Gustavo-Sanmartino/",
+  }).showToast();
+	});
+	*/
+
+let button = document.getElementById('boton');
+
+button.addEventListener("click", () => {
+	Swal.fire({
+	title: 'Bienvenido!!',
+	text: 'Te encuentras visitando mi pagina, puedes comenzar a comprar',
+	imageUrl: '/Assets/Logos/Foto perfil opcional.jpg',
+	imageWidth: 250,
+	imageHeight: 400,
+	imageAlt: 'Custom image',
+ })  
+})
+
+/*
+//Practicas sobre TOATIFY
+button.addEventListener("click", () => {
+	Toastify({
+	text: "Click aquí para ir a mi porfolio!",
+	duration: 3000,
+	destination: "https://gusta1075.github.io/Porfolio-Gustavo-Sanmartino/",
+  }).showToast();
+	});
+
+*/
 	const cards = document.getElementById('cards')
 	const items = document.getElementById('items')
 	const footer = document.getElementById('footer')
@@ -248,7 +271,6 @@ let productos = [
 			console.log(err)
 	}
 }
-
  
  // pintar productos
 const pintarCards = data => {
