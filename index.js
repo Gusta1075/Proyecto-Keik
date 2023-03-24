@@ -190,14 +190,7 @@ let productos = [
 	
 	LIBRERIAS 
 
-	//boton para acceder a mi porfolio
-button.addEventListener("click", () => {
-	Toastify({
-	text: "Click aquí para ir a mi porfolio!",
-	duration: 3000,
-	destination: "https://gusta1075.github.io/Porfolio-Gustavo-Sanmartino/",
-	  }).showToast();
-	});
+	
 */
 //alerta de bienvenida a la mi pagina
    /* wal.fire({
@@ -209,7 +202,15 @@ button.addEventListener("click", () => {
 	imageAlt: 'Custom image',
  })  
 */
-
+//boton para acceder a mi porfolio
+//button.addEventListener("click", () => {
+//	Toastify({
+//	text: "Click aquí para ir a mi porfolio!",
+//	duration: 3000,
+//	destination: "https://gusta1075.github.io/Porfolio-Gustavo-Sanmartino/",
+//	  }).showToast();
+//	});
+	
  
 
 	const cards = document.getElementById('cards')
@@ -221,8 +222,6 @@ button.addEventListener("click", () => {
 	const fragment = document.createDocumentFragment()
 	let carrito = {}
 
-
-	
 
 	document.addEventListener("DOMContentLoaded", () => {
 		fetchData()
@@ -249,6 +248,8 @@ button.addEventListener("click", () => {
 			console.log(err)
 	}
 }
+
+ 
  // pintar productos
 const pintarCards = data => {
 	data.forEach(producto => {
@@ -306,7 +307,7 @@ const pintarCarrito = () => {
 
 	pintarFooter()
 
-	
+		
 
   localStorage.setItem('carrito', JSON.stringify(carrito))
 
@@ -362,4 +363,4 @@ const pintarCarrito = () => {
     e.stopPropagation()
   }
 
-  
+ 

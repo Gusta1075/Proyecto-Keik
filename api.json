@@ -3,7 +3,7 @@
       "precio": 5800,
       "id": 1,
       "title": "Remera",
-      "thumbnailUrl": "./Assets/Logos/Camiseta3.png"
+      "thumbnailUrl": "/Assets/Logos/Camiseta3.png"
     },
     {
       "precio": 12500,
